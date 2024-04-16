@@ -6,7 +6,7 @@
 /*   By: masayama <masayama@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 20:17:18 by masayama          #+#    #+#             */
-/*   Updated: 2024/04/16 21:10:21 by masayama         ###   ########.fr       */
+/*   Updated: 2024/04/16 21:23:02 by masayama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,18 @@ int	ft_isalpha(int c)
 }
 
 // #include <stdio.h>
+// #include <ctype.h>
 
 // int	main(void)
 // {
+// 	printf("-----isalpha-----\n");
+// 	printf("1 = %d\n", isalpha('1'));
+// 	printf("a = %d\n", isalpha('a'));
+// 	printf("z = %d\n", isalpha('z'));
+// 	printf("A = %d\n", isalpha('A'));
+// 	printf("Z = %d\n", isalpha('Z'));
+// 	printf("* = %d\n", isalpha('*'));
+// 	printf("-----ft_isalpha-----\n");
 // 	printf("1 = %d\n", ft_isalpha('1'));
 // 	printf("a = %d\n", ft_isalpha('a'));
 // 	printf("z = %d\n", ft_isalpha('z'));

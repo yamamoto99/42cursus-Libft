@@ -6,7 +6,7 @@
 /*   By: masayama <masayama@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/20 19:43:51 by masayama          #+#    #+#             */
-/*   Updated: 2024/04/16 20:08:35 by masayama         ###   ########.fr       */
+/*   Updated: 2024/04/16 20:27:42 by masayama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -113,54 +113,56 @@ char	**ft_split(char *str, char *charset)
 }
 
 // #include <stdio.h>
-// int  main(void)
+
+// int	main(void)
 // {
-//   char  **res;
-//   int  count;
-  
-//   res = ft_split ("                                           ", "   ");
-//   count = 0;
-//   printf ("%p\n", res);
-//   while (res && res[count])
-//   {
-//     printf ("count[%d]: %s\n", count, res[count]);
-//     free (res[count++]);
-//   }
-//   free (res);
-//   res = ft_split ("                         ", "     ");
-//   count = 0;
-//   printf ("%p\n", res);
-//   while (res && res[count])
-//   {
-//     printf ("count[%d]: %s\n", count, res[count]);
-//     free (res[count++]);
-//   }
-//   free (res);
-//   res = ft_split ("0fnoU", "0fnoU");
-//   count = 0;
-//   printf ("%p\n", res);
-//   while (res && res[count])
-//   {
-//     printf ("count[%d]: %s\n", count, res[count]);
-//     free (res[count++]);
-//   }
-//   free (res);
-//   res = ft_split ("CV2qFU8GG        6mqYY9BGTVCV    LI oV4rgCRPsk9GQFedJQ", "Y52C");
-//   count = 0;
-//   printf ("%p\n", res);
-//   while (res && res[count])
-//   {
-//     printf ("count[%d]: %s\n", count, res[count]);
-//     free (res[count++]);
-//   }
-//   free (res);
-//   res = ft_split ("  gh  ", " gh");
-//   count = 0;
-//   printf ("%p\n", res);
-//   while (res && res[count])
-//   {
-//     printf ("count[%d]: %s\n", count, res[count]);
-//     free (res[count++]);
-//   }
-//   free (res);
+// 	char	**res;
+// 	int		count;
+
+// 	res = ft_split("                                           ", "   ");
+// 	count = 0;
+// 	printf("%p\n", res);
+// 	while (res && res[count])
+// 	{
+// 		printf("count[%d]: %s\n", count, res[count]);
+// 		free(res[count++]);
+// 	}
+// 	free(res);
+// 	res = ft_split("                         ", "     ");
+// 	count = 0;
+// 	printf("%p\n", res);
+// 	while (res && res[count])
+// 	{
+// 		printf("count[%d]: %s\n", count, res[count]);
+// 		free(res[count++]);
+// 	}
+// 	free(res);
+// 	res = ft_split("0fnoU", "0fnoU");
+// 	count = 0;
+// 	printf("%p\n", res);
+// 	while (res && res[count])
+// 	{
+// 		printf("count[%d]: %s\n", count, res[count]);
+// 		free(res[count++]);
+// 	}
+// 	free(res);
+// 	res = ft_split("CV2qFU8GG        6mqYY9BGTVCV    LI oV4rgCRPsk9GQFedJQ",
+// 			"Y52C");
+// 	count = 0;
+// 	printf("%p\n", res);
+// 	while (res && res[count])
+// 	{
+// 		printf("count[%d]: %s\n", count, res[count]);
+// 		free(res[count++]);
+// 	}
+// 	free(res);
+// 	res = ft_split("  gh  ", " gh");
+// 	count = 0;
+// 	printf("%p\n", res);
+// 	while (res && res[count])
+// 	{
+// 		printf("count[%d]: %s\n", count, res[count]);
+// 		free(res[count++]);
+// 	}
+// 	free(res);
 // }

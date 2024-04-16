@@ -6,11 +6,11 @@
 /*   By: masayama <masayama@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 20:17:18 by masayama          #+#    #+#             */
-/*   Updated: 2024/04/16 20:28:17 by masayama         ###   ########.fr       */
+/*   Updated: 2024/04/16 21:10:21 by masayama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(char c)
+int	ft_isalpha(int c)
 {
 	if (('A' <= c && c <= 'Z') || ('a' <= c && c <= 'z'))
 		return (1);

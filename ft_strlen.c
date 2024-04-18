@@ -6,7 +6,7 @@
 /*   By: masayama <masayama@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 11:43:18 by masayama          #+#    #+#             */
-/*   Updated: 2024/04/18 09:09:28 by masayama         ###   ########.fr       */
+/*   Updated: 2024/04/18 13:19:26 by masayama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@ size_t	ft_strlen(const char *s)
 	size_t	count;
 
 	count = 0;
-	if (s == NULL)
-		return (0);
 	while (s[count] != 0)
 		count++;
 	return (count);

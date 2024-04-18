@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   test_ft_bzero.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: susami <susami@student.42tokyo.jp>         +#+  +:+       +#+        */
+/*   By: masayama <masayama@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/15 17:40:45 by susami            #+#    #+#             */
-/*   Updated: 2022/05/02 10:02:12 by susami           ###   ########.fr       */
+/*   Updated: 2024/04/18 10:14:02 by masayama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,6 @@ int	main(void)
 	// /* 5 */ ft_bzero(NULL, 1); bzero(NULL, 1);
 
 	// very slow
-	// /* 5 */ s1 = malloc(INT_MAX); s2 = malloc(INT_MAX); check_bzero(s1, s2, INT_MAX); free(s1); free(s2);
+	/* 5 */ s1 = malloc(INT_MAX); s2 = malloc(INT_MAX); check_bzero(s1, s2, INT_MAX); free(s1); free(s2);
 	return (0);
 }

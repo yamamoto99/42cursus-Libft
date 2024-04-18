@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   test_ft_memset.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: susami <susami@student.42tokyo.jp>         +#+  +:+       +#+        */
+/*   By: masayama <masayama@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/15 17:11:14 by susami            #+#    #+#             */
-/*   Updated: 2022/05/02 10:07:30 by susami           ###   ########.fr       */
+/*   Updated: 2024/04/18 10:14:14 by masayama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,6 @@ int	main(void)
 	/* 8 */ s1 = calloc(100, 100); s2 = calloc(100, 100); check_memset(s1, s2, INT_MIN, 42); free(s1); free(s2);
 	/* 10 */ check_memset(NULL, NULL, 0, 0);
 	// Very slow
-	// /* 9 */ s1 = calloc(INT_MAX, 1); s2 = calloc(INT_MAX, 1); check_memset(s1, s2, 42, INT_MAX); free(s1); free(s2);
+	/* 9 */ s1 = calloc(INT_MAX, 1); s2 = calloc(INT_MAX, 1); check_memset(s1, s2, 42, INT_MAX); free(s1); free(s2);
 	return (0);
 }

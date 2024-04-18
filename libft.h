@@ -6,7 +6,7 @@
 /*   By: masayama <masayama@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 21:59:50 by masayama          #+#    #+#             */
-/*   Updated: 2024/04/18 09:33:51 by masayama         ###   ########.fr       */
+/*   Updated: 2024/04/18 10:45:19 by masayama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,6 @@ int		ft_isprint(int c);
 size_t	ft_strlen(const char *s);
 void	*ft_memset(void *b, int c, size_t len);
 void	ft_bzero(void *s, size_t n);
+void*	ft_memcpy(void *restrict dst, const void *restrict src, size_t n);
 
 #endif

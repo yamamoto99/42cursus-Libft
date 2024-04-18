@@ -6,7 +6,7 @@
 #    By: masayama <masayama@student.42tokyo.jp>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/17 15:18:56 by masayama          #+#    #+#              #
-#    Updated: 2024/04/17 20:18:24 by masayama         ###   ########.fr        #
+#    Updated: 2024/04/18 09:28:37 by masayama         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,8 @@ SRCS =	ft_isalnum.c \
 		ft_isdigit.c \
 		ft_isprint.c \
 		ft_memset.c \
-		ft_strlen.c
+		ft_strlen.c \
+		ft_bzero.c
 OBJS = $(SRCS:.c=.o)
 INCLUDE = -I.
 

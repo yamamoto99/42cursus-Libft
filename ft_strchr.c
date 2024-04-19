@@ -6,22 +6,22 @@
 /*   By: masayama <masayama@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/19 09:44:48 by masayama          #+#    #+#             */
-/*   Updated: 2024/04/19 10:06:05 by masayama         ###   ########.fr       */
+/*   Updated: 2024/04/19 10:11:19 by masayama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char*	ft_strchr(const char *s, int c)
+char	*ft_strchr(const char *s, int c)
 {
-	while(*s)
+	while (*s)
 	{
 		if (*s == (char)c)
-			return ((char*)s);
+			return ((char *)s);
 		s++;
 	}
 	if (c == '\0')
-		return ((char*)s);
+		return ((char *)s);
 	return (NULL);
 }
 

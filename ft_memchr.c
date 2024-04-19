@@ -6,7 +6,7 @@
 /*   By: masayama <masayama@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/19 12:15:48 by masayama          #+#    #+#             */
-/*   Updated: 2024/04/19 13:05:08 by masayama         ###   ########.fr       */
+/*   Updated: 2024/04/19 13:30:57 by masayama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,16 +15,16 @@
 void	*ft_memchr(const void *s, int c, size_t n)
 {
 	size_t	i;
+	unsigned char *str;
 
+	str = (unsigned char *)s;
 	i = 0;
-	while ((unsigned char *)s && i++ < n)
+	while (i++ < n)
 	{
-		if (*((unsigned char *)s) == ((unsigned char)c))
-			return ((unsigned char *)s);
-		s++;
+		if (*str == ((unsigned char)c))
+			return (str);
+		str++;
 	}
-	if ((unsigned char)c == '\0')
-		return ((unsigned char *)s);
 	return (NULL);
 }
 
@@ -33,19 +33,21 @@ void	*ft_memchr(const void *s, int c, size_t n)
 
 // int	main(void)
 // {
-// 	char a[] = "1234567890987654321";
+// 	char a[] = "123456789\0/0987654321";
 // 	printf("-----memchr-----\n");
-// 	printf("1  = %s\n", (char*)memchr(a, '1', 20));
-// 	printf("5  = %s\n", (char*)memchr(a, '5', 20));
-// 	printf("9  = %s\n", (char*)memchr(a, '9', 5));
-// 	printf("0  = %s\n", (char*)memchr(a, '0', 20));
-// 	printf("\\0 = %s\n", (char*)memchr(a, '\0', 20));
-// 	printf("*  = %s\n", (char*)memchr(a, '*', 20));
+// 	printf("1  = %p\n", memchr(a, '1', 20));
+// 	printf("5  = %p\n", memchr(a, '5', 20));
+// 	printf("9  = %p\n", memchr(a, '9', 5));
+// 	printf("0  = %p\n", memchr(a, '0', 20));
+// 	printf("\\0 = %p\n", memchr(a, '\0', 20));
+// 	printf("*  = %p\n", memchr(a, '*', 20));
+// 	// printf("*  = %p\n", memchr(NULL, '*', 20));
 // 	printf("-----ft_memchr-----\n");
-// 	printf("1  = %s\n", (char*)ft_memchr(a, '1', 20));
-// 	printf("5  = %s\n", (char*)ft_memchr(a, '5', 20));
-// 	printf("9  = %s\n", (char*)ft_memchr(a, '9', 5));
-// 	printf("0  = %s\n", (char*)ft_memchr(a, '0', 20));
-// 	printf("\\0 = %s\n", (char*)ft_memchr(a, '\0', 20));
-// 	printf("*  = %s\n", (char*)ft_memchr(a, '*', 20));
+// 	printf("1  = %p\n", ft_memchr(a, '1', 20));
+// 	printf("5  = %p\n", ft_memchr(a, '5', 20));
+// 	printf("9  = %p\n", ft_memchr(a, '9', 5));
+// 	printf("0  = %p\n", ft_memchr(a, '0', 20));
+// 	printf("\\0 = %p\n", ft_memchr(a, '\0', 20));
+// 	printf("*  = %p\n", ft_memchr(a, '*', 20));
+// 	// printf("*  = %p\n", ft_memchr(NULL, '*', 20));
 // }

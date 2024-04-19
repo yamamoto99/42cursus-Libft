@@ -6,7 +6,7 @@
 /*   By: masayama <masayama@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/19 09:33:36 by masayama          #+#    #+#             */
-/*   Updated: 2024/04/19 09:35:11 by masayama         ###   ########.fr       */
+/*   Updated: 2024/04/19 10:10:59 by masayama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@ int	ft_tolower(int c)
 		return (c + 32);
 	return (c);
 }
-
 
 // #include <stdio.h>
 // #include <ctype.h>

@@ -6,12 +6,11 @@
 /*   By: masayama <masayama@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/19 20:42:10 by masayama          #+#    #+#             */
-/*   Updated: 2024/04/19 22:30:23 by masayama         ###   ########.fr       */
+/*   Updated: 2024/04/19 23:23:44 by masayama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <limits.h>
 
 int	ft_isspace(int c)
 {
@@ -27,12 +26,14 @@ long	ft_is_positive(const char **str)
 	long	is_positive;
 
 	is_positive = 1;
-	while (**str == '-' || **str == '+')
+
+	if (**str == '-')
 	{
-		if (**str == '-')
-			is_positive *= -1;
+		is_positive *= -1;
 		(*str)++;
 	}
+	else if (**str == '+')
+		(*str)++;
 	return (is_positive);
 }
 
@@ -93,6 +94,30 @@ int	ft_atoi(const char *str)
 
 // int	main(void)
 // {
-// 	char	a[] = "   ---+--+1234ab567";
+// 	char	a[] = "   2147483647";
+// 	char	b[] = "   -2147483648";
+// 	char	c[] = "   9223372036854775807";
+// 	char	d[] = "   -9223372036854775808";
+// 	char	e[] = "   0";
+// 	char	f[] = "   1234";
+// 	char	g[] = "   -1234";
+// 	char	h[] = "   1234ab567";
+// 	printf("-----atoi-----\n");
+// 	printf("%d\n", atoi(a));
+// 	printf("%d\n", atoi(b));
+// 	printf("%d\n", atoi(c));
+// 	printf("%d\n", atoi(d));
+// 	printf("%d\n", atoi(e));
+// 	printf("%d\n", atoi(f));
+// 	printf("%d\n", atoi(g));
+// 	printf("%d\n", atoi(h));
+// 	printf("-----ft_atoi-----\n");
 // 	printf("%d\n", ft_atoi(a));
+// 	printf("%d\n", ft_atoi(b));
+// 	printf("%d\n", ft_atoi(c));
+// 	printf("%d\n", ft_atoi(d));
+// 	printf("%d\n", ft_atoi(e));
+// 	printf("%d\n", ft_atoi(f));
+// 	printf("%d\n", ft_atoi(g));
+// 	printf("%d\n", ft_atoi(h));
 // }

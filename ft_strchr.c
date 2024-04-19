@@ -6,7 +6,7 @@
 /*   By: masayama <masayama@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/19 09:44:48 by masayama          #+#    #+#             */
-/*   Updated: 2024/04/19 10:11:19 by masayama         ###   ########.fr       */
+/*   Updated: 2024/04/19 10:55:16 by masayama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,17 +30,19 @@ char	*ft_strchr(const char *s, int c)
 
 // int main(void)
 // {
-// 	char a[] = "1234567890";
+// 	char a[] = "1234567890987654321";
 // 	printf("-----strchr-----\n");
 // 	printf("1  = %s\n", strchr(a, '1'));
 // 	printf("5  = %s\n", strchr(a, '5'));
 // 	printf("9  = %s\n", strchr(a, '9'));
 // 	printf("0  = %s\n", strchr(a, '0'));
 // 	printf("\\0 = %s\n", strchr(a, '\0'));
+// 	printf("*  = %s\n", strchr(a, '*'));
 // 	printf("-----ft_strchr-----\n");
 // 	printf("1  = %s\n", ft_strchr(a, '1'));
 // 	printf("5  = %s\n", ft_strchr(a, '5'));
 // 	printf("9  = %s\n", ft_strchr(a, '9'));
 // 	printf("0  = %s\n", ft_strchr(a, '0'));
 // 	printf("\\0 = %s\n", ft_strchr(a, '\0'));
+// 	printf("*  = %s\n", ft_strchr(a, '*'));
 // }

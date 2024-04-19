@@ -6,13 +6,16 @@
 /*   By: masayama <masayama@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 11:20:21 by masayama          #+#    #+#             */
-/*   Updated: 2024/04/17 11:38:01 by masayama         ###   ########.fr       */
+/*   Updated: 2024/04/19 22:32:20 by masayama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isprint(int c)
 {
-	return (32 <= c && c <= 126);
+	unsigned char	a;
+
+	a = (unsigned char)c;
+	return (32 <= a && a <= 126);
 }
 
 // #include <stdio.h>

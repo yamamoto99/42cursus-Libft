@@ -6,13 +6,16 @@
 /*   By: masayama <masayama@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 20:44:37 by masayama          #+#    #+#             */
-/*   Updated: 2024/04/16 21:24:58 by masayama         ###   ########.fr       */
+/*   Updated: 2024/04/19 22:32:10 by masayama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isdigit(int c)
 {
-	if ('0' <= c && c <= '9')
+	unsigned char	a;
+
+	a = (unsigned char)c;
+	if ('0' <= a && a <= '9')
 		return (1);
 	return (0);
 }

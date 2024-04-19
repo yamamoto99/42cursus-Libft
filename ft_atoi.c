@@ -6,7 +6,7 @@
 /*   By: masayama <masayama@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/19 20:42:10 by masayama          #+#    #+#             */
-/*   Updated: 2024/04/19 23:23:44 by masayama         ###   ########.fr       */
+/*   Updated: 2024/04/19 23:42:16 by masayama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,6 @@ long	ft_is_positive(const char **str)
 	long	is_positive;
 
 	is_positive = 1;
-
 	if (**str == '-')
 	{
 		is_positive *= -1;

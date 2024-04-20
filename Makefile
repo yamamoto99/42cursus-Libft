@@ -6,11 +6,7 @@
 #    By: masayama <masayama@student.42tokyo.jp>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/17 15:18:56 by masayama          #+#    #+#              #
-<<<<<<< HEAD
-#    Updated: 2024/04/20 15:48:46 by masayama         ###   ########.fr        #
-=======
-#    Updated: 2024/04/20 17:09:21 by masayama         ###   ########.fr        #
->>>>>>> feature/split
+#    Updated: 2024/04/20 20:22:24 by masayama         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 

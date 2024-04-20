@@ -6,15 +6,16 @@
 /*   By: masayama <masayama@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/20 11:38:44 by masayama          #+#    #+#             */
-/*   Updated: 2024/04/20 13:50:25 by masayama         ###   ########.fr       */
+/*   Updated: 2024/04/20 13:54:32 by masayama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_substr_helper(char *res ,char const *s, unsigned int start, size_t len)
+char	*ft_substr_helper(char *res, char const *s, unsigned int start,
+		size_t len)
 {
-	size_t i;
+	size_t	i;
 
 	i = 0;
 	while (s[start + i] && i < len)

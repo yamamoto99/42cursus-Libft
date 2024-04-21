@@ -6,7 +6,7 @@
 /*   By: masayama <masayama@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/21 16:46:26 by masayama          #+#    #+#             */
-/*   Updated: 2024/04/21 16:57:30 by masayama         ###   ########.fr       */
+/*   Updated: 2024/04/21 16:59:11 by masayama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 int	ft_lstsize(t_list *lst)
 {
-	t_list *current_node;
-	int count;
+	t_list	*current_node;
+	int		count;
 
 	current_node = lst;
 	count = 0;

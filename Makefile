@@ -6,7 +6,7 @@
 #    By: masayama <masayama@student.42tokyo.jp>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/17 15:18:56 by masayama          #+#    #+#              #
-#    Updated: 2024/04/21 15:20:59 by masayama         ###   ########.fr        #
+#    Updated: 2024/04/21 15:37:00 by masayama         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -44,7 +44,8 @@ SRCS =	ft_isalnum.c \
 		ft_strmapi.c \
 		ft_striteri.c \
 		ft_putchar_fd.c \
-		ft_putstr_fd.c
+		ft_putstr_fd.c \
+		ft_putendl_fd.c
 OBJS = $(SRCS:.c=.o)
 INCLUDE = -I.
 

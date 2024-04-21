@@ -6,7 +6,7 @@
 /*   By: masayama <masayama@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 21:59:50 by masayama          #+#    #+#             */
-/*   Updated: 2024/04/21 17:53:34 by masayama         ###   ########.fr       */
+/*   Updated: 2024/04/21 18:47:11 by masayama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,5 +63,6 @@ void				ft_lstadd_front(t_list **lst, t_list *new);
 int					ft_lstsize(t_list *lst);
 t_list				*ft_lstlast(t_list *lst);
 void				ft_lstadd_back(t_list **lst, t_list *new);
+void				ft_lstdelone(t_list *lst, void (*del)(void *));
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: masayama <masayama@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/21 16:02:20 by masayama          #+#    #+#             */
-/*   Updated: 2024/04/21 16:14:24 by masayama         ###   ########.fr       */
+/*   Updated: 2024/04/21 16:34:21 by masayama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,3 +23,12 @@ t_list	*ft_lstnew(void *content)
 	new_node->next = NULL;
 	return (new_node);
 }
+
+// #include <stdio.h>
+
+// int main(void)
+// {
+// 	char a[] = "123";
+// 	t_list *node = ft_lstnew(a);
+// 	printf("%s\n", (char *)node->content);
+// }

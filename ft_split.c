@@ -6,7 +6,7 @@
 /*   By: masayama <masayama@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/20 17:08:41 by masayama          #+#    #+#             */
-/*   Updated: 2024/04/20 20:20:14 by masayama         ###   ########.fr       */
+/*   Updated: 2024/04/21 15:31:56 by masayama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,9 +57,9 @@ char	**free_all(char **res)
 
 char	**split_string_into_array(char const *s, char c, char **res)
 {
-	int i;
-	int j;
-	int len;
+	int	i;
+	int	j;
+	int	len;
 
 	i = 0;
 	j = 0;
@@ -69,7 +69,7 @@ char	**split_string_into_array(char const *s, char c, char **res)
 		while (s[i] && s[i] == c)
 			i++;
 		if (!s[i])
-			break;
+			break ;
 		len = word_len(s + i, c);
 		res[j] = ft_substr(s, i, len);
 		if (!res[j++])
@@ -82,6 +82,7 @@ char	**split_string_into_array(char const *s, char c, char **res)
 char	**ft_split(char const *s, char c)
 {
 	char	**res;
+
 	if (!s)
 		return (NULL);
 	res = (char **)ft_calloc(sizeof(char *), count_words(s, c) + 1);

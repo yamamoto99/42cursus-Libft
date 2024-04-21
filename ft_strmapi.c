@@ -6,7 +6,7 @@
 /*   By: masayama <masayama@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/21 13:48:17 by masayama          #+#    #+#             */
-/*   Updated: 2024/04/21 14:21:21 by masayama         ###   ########.fr       */
+/*   Updated: 2024/04/21 15:30:51 by masayama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	size_t s_len;
-	size_t i;
-	char *res;
+	size_t	s_len;
+	size_t	i;
+	char	*res;
 
 	if (!s)
 		return (NULL);

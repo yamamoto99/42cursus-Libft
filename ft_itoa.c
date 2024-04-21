@@ -6,7 +6,7 @@
 /*   By: masayama <masayama@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/20 20:31:34 by masayama          #+#    #+#             */
-/*   Updated: 2024/04/21 13:37:51 by masayama         ###   ########.fr       */
+/*   Updated: 2024/04/21 15:29:36 by masayama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int	count_digits(long n)
 	return (count_digits(n / 10) + 1);
 }
 
-void number_into_array(char *res, long nbr, int negative_flag, int size)
+void	number_into_array(char *res, long nbr, int negative_flag, int size)
 {
 	res[--size] = '\0';
 	if (negative_flag)
@@ -50,10 +50,10 @@ void number_into_array(char *res, long nbr, int negative_flag, int size)
 
 char	*ft_itoa(int n)
 {
-	int negative_flag;
-	long long_n;
-	char *res;
-	int	size;
+	int		negative_flag;
+	long	long_n;
+	char	*res;
+	int		size;
 
 	long_n = (long)n;
 	negative_flag = is_negative(n);

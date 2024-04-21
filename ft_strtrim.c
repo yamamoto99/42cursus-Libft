@@ -6,7 +6,7 @@
 /*   By: masayama <masayama@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/20 15:48:11 by masayama          #+#    #+#             */
-/*   Updated: 2024/04/20 16:57:21 by masayama         ###   ########.fr       */
+/*   Updated: 2024/04/21 15:30:35 by masayama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,11 +25,11 @@ int	is_delete(char c, char const *set)
 	}
 	return (0);
 }
-#include <stdio.h>
+
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	int	start;
-	int	end;
+	int		start;
+	int		end;
 	char	*res;
 
 	if (!s1 || !set)

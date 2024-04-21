@@ -1,23 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: masayama <masayama@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/21 14:32:04 by masayama          #+#    #+#             */
-/*   Updated: 2024/04/21 15:31:25 by masayama         ###   ########.fr       */
+/*   Created: 2024/04/21 15:20:26 by masayama          #+#    #+#             */
+/*   Updated: 2024/04/21 15:32:24 by masayama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putchar_fd(char c, int fd)
+void	ft_putstr_fd(char *s, int fd)
 {
-	write(fd, &c, 1);
+	if (s)
+	{
+		while (*s != 0)
+			ft_putchar_fd(*s++, fd);
+	}
 }
-
-// int	main(void)
-// {
-// 	ft_putchar_fd('a', 1);
-// }

@@ -6,7 +6,7 @@
 /*   By: masayama <masayama@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/21 14:03:11 by masayama          #+#    #+#             */
-/*   Updated: 2024/04/21 14:20:52 by masayama         ###   ########.fr       */
+/*   Updated: 2024/04/21 15:32:17 by masayama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
-	size_t s_len;
-	size_t i;
+	size_t	s_len;
+	size_t	i;
 
 	if (s)
 	{

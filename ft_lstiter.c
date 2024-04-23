@@ -1,35 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strmapi.c                                       :+:      :+:    :+:   */
+/*   ft_lstiter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: masayama <masayama@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/21 13:48:17 by masayama          #+#    #+#             */
-/*   Updated: 2024/04/22 13:18:45 by masayama         ###   ########.fr       */
+/*   Created: 2024/04/23 01:14:11 by masayama          #+#    #+#             */
+/*   Updated: 2024/04/23 10:54:42 by masayama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	size_t	s_len;
-	size_t	i;
-	char	*res;
+	t_list	*current_node;
 
-	if (!s)
-		return (NULL);
-	s_len = ft_strlen(s);
-	res = (char *)malloc(sizeof(char) * (s_len + 1));
-	if (!res)
-		return (NULL);
-	i = 0;
-	while (i < s_len)
+	current_node = lst;
+	if (lst && (*f))
 	{
-		res[i] = (*f)((unsigned int)i, s[i]);
-		i++;
+		while (current_node)
+		{
+			(*f)(current_node->content);
+			current_node = current_node->next;
+		}
 	}
-	res[i] = '\0';
-	return (res);
 }

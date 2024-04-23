@@ -6,7 +6,7 @@
 /*   By: masayama <masayama@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/19 14:04:49 by masayama          #+#    #+#             */
-/*   Updated: 2024/04/19 22:27:45 by masayama         ###   ########.fr       */
+/*   Updated: 2024/04/22 23:05:57 by masayama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,10 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 
 	if (haystack == NULL && needle == NULL)
 		return (NULL);
-	if (len != 0 && *haystack == 0)
-		return (NULL);
 	if (*needle == '\0')
 		return ((char *)haystack);
+	if (len != 0 && *haystack == 0)
+		return (NULL);
 	needle_len = ft_strlen(needle);
 	if (needle_len > len)
 		return (NULL);
@@ -56,6 +56,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 // 	printf("%s\n", strnstr(a, d, 14));
 // 	printf("%s\n", strnstr(a, e, 14));
 // 	printf("%s\n", strnstr(e, d, 14));
+// 	printf("%s\n", strnstr(e, e, 14));
 // 	printf("%s\n", strnstr(NULL, b, 0));
 // 	// printf("%s\n", strnstr(a, NULL, 0));
 // 	// printf("%s\n", strnstr(NULL, NULL, 0));
@@ -71,6 +72,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 // 	printf("%s\n", ft_strnstr(a, d, 14));
 // 	printf("%s\n", ft_strnstr(a, e, 14));
 // 	printf("%s\n", ft_strnstr(e, d, 14));
+// 	printf("%s\n", ft_strnstr(e, e, 14));
 // 	printf("%s\n", ft_strnstr(NULL, b, 0));
 // 	// printf("%s\n", ft_strnstr(a, NULL, 0));
 // 	// printf("%s\n", ft_strnstr(NULL, NULL, 0));

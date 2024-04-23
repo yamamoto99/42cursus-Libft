@@ -6,7 +6,7 @@
 /*   By: masayama <masayama@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/20 11:38:44 by masayama          #+#    #+#             */
-/*   Updated: 2024/04/20 13:54:32 by masayama         ###   ########.fr       */
+/*   Updated: 2024/04/22 23:55:33 by masayama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	if (ft_strlen(s + start) >= len)
 		res = malloc(len + 1);
 	else
-		res = malloc(ft_strlen(s + start));
+		res = malloc(ft_strlen(s + start) + 1);
 	if (res == NULL)
 		return (NULL);
 	ft_substr_helper(res, s, start, len);

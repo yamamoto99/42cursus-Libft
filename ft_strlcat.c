@@ -6,7 +6,7 @@
 /*   By: masayama <masayama@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/18 20:53:40 by masayama          #+#    #+#             */
-/*   Updated: 2024/04/19 13:23:42 by masayama         ###   ########.fr       */
+/*   Updated: 2024/04/22 23:34:30 by masayama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,9 +27,9 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	index = 0;
 	if (dstsize <= dst_len)
 		return (dstsize + src_len);
-	while (count < dstsize - 1)
+	while (count < dstsize - 1 && src[index])
 		dst[count++] = src[index++];
-	if (count == dstsize - 1)
+	if (count < dstsize)
 		dst[count] = '\0';
 	return (dst_len + src_len);
 }
@@ -42,7 +42,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 // 	printf("-----strlcat-----\n");
 // 	char a[20] = "ABCDE";
 // 	char b[] = "1234";
-// 	printf("%lu\n%s\n", strlcat(a, b, 13), a);
+// 	printf("%lu\n%s\n", strlcat(a, b, -8), a);
 // 	// printf("%lu\n\n", strlcat(NULL, "FE", 2));
 // 	// strlcat("FE", NULL, 0);
 // 	// strlcat(NULL, NULL, 0);

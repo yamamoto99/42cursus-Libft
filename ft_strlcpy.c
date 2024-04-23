@@ -6,7 +6,7 @@
 /*   By: masayama <masayama@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/18 22:31:03 by masayama          #+#    #+#             */
-/*   Updated: 2024/04/18 23:11:11 by masayama         ###   ########.fr       */
+/*   Updated: 2024/04/22 22:57:03 by masayama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	index = 0;
 	while (*src != 0 && ++index < dstsize)
 		*dst++ = *src++;
-	if (index != 1)
+	if (index != 1 || dstsize == 1)
 		*dst = 0;
 	return (src_len);
 }
@@ -37,7 +37,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 // 	char dst[10] = "000000000";
 // 	char src[10] = "123456";
 // 	printf("src size = %d\nreturn value = %lu\ncopy src to dst = %s\n", 7,
-// 		strlcpy(dst, src, 0), dst);
+// 		strlcpy(dst, src, 1), dst);
 // 	printf("src size = %d\nreturn value = %lu\ncopy src to dst = %s\n", 7,
 // 		strlcpy(dst, src, 5), dst);
 // 	strlcpy(NULL, "DW", 0);
@@ -47,7 +47,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 // 	char ft_dst[10] = "000000000";
 // 	char ft_src[10] = "123456";
 // 	printf("src size = %d\nreturn value = %lu\ncopy src to dst = %s\n", 7,
-// 		ft_strlcpy(ft_dst, ft_src, 0), ft_dst);
+// 		ft_strlcpy(ft_dst, ft_src, 1), ft_dst);
 // 	printf("src size = %d\nreturn value = %lu\ncopy src to dst = %s\n", 7,
 // 		ft_strlcpy(ft_dst, ft_src, 5), ft_dst);
 // 	ft_strlcpy(NULL, "DW", 0);

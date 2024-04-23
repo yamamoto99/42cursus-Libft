@@ -6,7 +6,7 @@
 #    By: masayama <masayama@student.42tokyo.jp>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/17 15:18:56 by masayama          #+#    #+#              #
-#    Updated: 2024/04/21 19:52:06 by masayama         ###   ########.fr        #
+#    Updated: 2024/04/23 01:26:32 by masayama         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -46,18 +46,26 @@ SRCS = ft_isalnum.c \
 		ft_putchar_fd.c \
 		ft_putstr_fd.c \
 		ft_putendl_fd.c \
-		ft_putnbr_fd.c \
-		ft_lstnew.c \
+		ft_putnbr_fd.c
+
+SRCS_B = ft_lstnew.c \
 		ft_lstadd_front.c \
 		ft_lstsize.c \
 		ft_lstlast.c \
 		ft_lstadd_back.c \
 		ft_lstdelone.c \
-		ft_lstclear.c
+		ft_lstclear.c \
+		ft_strcpy.c \
+		ft_lstiter.c \
+		ft_lstmap.c
 INCLUDE = -I.
 OBJS = $(SRCS:.c=.o)
+OBJS_B = $(SRCS_B:.c=.o)
 
 all : $(NAME)
+
+bonus: 
+	$(MAKE) OBJS="$(OBJS_B)" $(NAME)
 
 $(NAME) : $(OBJS)
 	ar rc $(NAME) $(OBJS)
@@ -66,7 +74,7 @@ $(NAME) : $(OBJS)
 	$(CC) $(CFLAG) $(INCLUDE) -c $< -o $@
 
 clean :
-	$(RM) $(OBJS)
+	$(RM) $(OBJS) $(OBJS_B)
 
 fclean : clean
 	$(RM) $(NAME)

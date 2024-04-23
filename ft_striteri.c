@@ -6,7 +6,7 @@
 /*   By: masayama <masayama@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/21 14:03:11 by masayama          #+#    #+#             */
-/*   Updated: 2024/04/21 15:32:17 by masayama         ###   ########.fr       */
+/*   Updated: 2024/04/22 13:18:29 by masayama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 		i = 0;
 		while (i < s_len)
 		{
-			f((unsigned int)i, &s[i]);
+			(*f)((unsigned int)i, &s[i]);
 			i++;
 		}
 	}

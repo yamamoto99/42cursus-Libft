@@ -6,7 +6,7 @@
 /*   By: masayama <masayama@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/20 15:48:11 by masayama          #+#    #+#             */
-/*   Updated: 2024/04/21 15:30:35 by masayama         ###   ########.fr       */
+/*   Updated: 2024/04/23 00:13:21 by masayama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	start = 0;
 	while (s1[start] && is_delete(s1[start], set))
 		start++;
-	while (s1[end] && is_delete(s1[end], set))
+	while (end >= 0 && s1[end] && is_delete(s1[end], set))
 		end--;
 	if (end - start + 2 <= 1)
 	{
@@ -59,6 +59,6 @@ char	*ft_strtrim(char const *s1, char const *set)
 
 // int main(void)
 // {
-// 	char a[] = "  \t \t \n   \n\n\n\t";
-// 	printf("%s\n" ,ft_strtrim(a, " \n\t"));
+// 	char a[] = "";
+// 	printf("%s\n" ,ft_strtrim(a, ""));
 // }

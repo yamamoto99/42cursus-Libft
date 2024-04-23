@@ -6,13 +6,13 @@
 /*   By: masayama <masayama@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/19 23:26:44 by masayama          #+#    #+#             */
-/*   Updated: 2024/04/19 23:33:53 by masayama         ###   ########.fr       */
+/*   Updated: 2024/04/22 13:04:01 by masayama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strcpy(char *dest, char *src)
+char	*ft_strcpy_clone(char *dest, char *src)
 {
 	char	*dest_head;
 
@@ -30,7 +30,7 @@ char	*ft_strdup(const char *s1)
 	res = (char *)malloc(sizeof(char) * (int)ft_strlen(s1) + 1);
 	if (res == NULL)
 		return (NULL);
-	return (ft_strcpy(res, (char *)s1));
+	return (ft_strcpy_clone(res, (char *)s1));
 }
 
 // #include <stdio.h>

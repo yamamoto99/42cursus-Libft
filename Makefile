@@ -6,7 +6,7 @@
 #    By: masayama <masayama@student.42tokyo.jp>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/17 15:18:56 by masayama          #+#    #+#              #
-#    Updated: 2024/04/23 11:32:45 by masayama         ###   ########.fr        #
+#    Updated: 2024/04/25 16:02:51 by masayama         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -65,7 +65,7 @@ OBJS_B = $(SRCS_B:.c=.o)
 all : $(NAME)
 
 bonus: 
-	$(MAKE) OBJS=$(OBJS_B) $(NAME)
+	$(MAKE) OBJS="$(OBJS) $(OBJS_B)" $(NAME)
 
 $(NAME) : $(OBJS)
 	ar rc $(NAME) $(OBJS)

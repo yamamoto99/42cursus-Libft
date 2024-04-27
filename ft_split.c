@@ -6,13 +6,13 @@
 /*   By: masayama <masayama@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/20 17:08:41 by masayama          #+#    #+#             */
-/*   Updated: 2024/04/21 15:31:56 by masayama         ###   ########.fr       */
+/*   Updated: 2024/04/27 16:56:29 by masayama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	count_words(char const *s, char c)
+static	int	count_words(char const *s, char c)
 {
 	int	count;
 
@@ -41,7 +41,7 @@ static int	word_len(char const *s, char c)
 	return (i);
 }
 
-char	**free_all(char **res)
+static	char	**free_all(char **res)
 {
 	int	i;
 
@@ -55,7 +55,7 @@ char	**free_all(char **res)
 	return (NULL);
 }
 
-char	**split_string_into_array(char const *s, char c, char **res)
+static	char	**split_string_into_array(char const *s, char c, char **res)
 {
 	int	i;
 	int	j;

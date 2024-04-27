@@ -6,13 +6,13 @@
 /*   By: masayama <masayama@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/21 15:39:50 by masayama          #+#    #+#             */
-/*   Updated: 2024/04/21 15:45:13 by masayama         ###   ########.fr       */
+/*   Updated: 2024/04/27 16:55:51 by masayama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putnbr_helper(long nb, int fd)
+static	void	ft_putnbr_helper(long nb, int fd)
 {
 	long	tmp;
 

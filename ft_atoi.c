@@ -6,13 +6,13 @@
 /*   By: masayama <masayama@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/19 20:42:10 by masayama          #+#    #+#             */
-/*   Updated: 2024/04/19 23:42:16 by masayama         ###   ########.fr       */
+/*   Updated: 2024/04/27 16:54:50 by masayama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isspace(int c)
+static	int	ft_isspace(int c)
 {
 	unsigned char	a;
 
@@ -21,7 +21,7 @@ int	ft_isspace(int c)
 		|| a == ' ');
 }
 
-long	ft_is_positive(const char **str)
+static	long	ft_is_positive(const char **str)
 {
 	long	is_positive;
 
@@ -36,7 +36,7 @@ long	ft_is_positive(const char **str)
 	return (is_positive);
 }
 
-int	is_overflow(long res, char next_num, long is_positive)
+static	int	is_overflow(long res, char next_num, long is_positive)
 {
 	long	max_div;
 

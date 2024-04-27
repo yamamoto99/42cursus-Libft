@@ -6,13 +6,13 @@
 /*   By: masayama <masayama@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/20 15:48:11 by masayama          #+#    #+#             */
-/*   Updated: 2024/04/23 00:13:21 by masayama         ###   ########.fr       */
+/*   Updated: 2024/04/27 16:57:26 by masayama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	is_delete(char c, char const *set)
+static	int	is_delete(char c, char const *set)
 {
 	int	i;
 

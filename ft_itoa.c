@@ -6,13 +6,13 @@
 /*   By: masayama <masayama@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/20 20:31:34 by masayama          #+#    #+#             */
-/*   Updated: 2024/04/21 15:29:36 by masayama         ###   ########.fr       */
+/*   Updated: 2024/04/27 16:57:56 by masayama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	is_negative(int nbr)
+static int	is_negative(int nbr)
 {
 	int	res;
 
@@ -22,14 +22,14 @@ int	is_negative(int nbr)
 	return (res);
 }
 
-int	count_digits(long n)
+static int	count_digits(long n)
 {
 	if (n <= 9)
 		return (1);
 	return (count_digits(n / 10) + 1);
 }
 
-void	number_into_array(char *res, long nbr, int negative_flag, int size)
+static void	number_into_array(char *res, long nbr, int negative_flag, int size)
 {
 	res[--size] = '\0';
 	if (negative_flag)

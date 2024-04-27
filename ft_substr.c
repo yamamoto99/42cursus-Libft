@@ -6,13 +6,13 @@
 /*   By: masayama <masayama@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/20 11:38:44 by masayama          #+#    #+#             */
-/*   Updated: 2024/04/22 23:55:33 by masayama         ###   ########.fr       */
+/*   Updated: 2024/04/27 16:57:37 by masayama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_substr_helper(char *res, char const *s, unsigned int start,
+static	char	*ft_substr_helper(char *res, char const *s, unsigned int start,
 		size_t len)
 {
 	size_t	i;

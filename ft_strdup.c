@@ -6,13 +6,13 @@
 /*   By: masayama <masayama@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/19 23:26:44 by masayama          #+#    #+#             */
-/*   Updated: 2024/04/22 13:04:01 by masayama         ###   ########.fr       */
+/*   Updated: 2024/04/27 16:56:51 by masayama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strcpy_clone(char *dest, char *src)
+static	char	*ft_strcpy_clone(char *dest, char *src)
 {
 	char	*dest_head;
 

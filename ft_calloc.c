@@ -6,7 +6,7 @@
 /*   By: masayama <masayama@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/19 23:49:31 by masayama          #+#    #+#             */
-/*   Updated: 2024/04/20 00:44:41 by masayama         ###   ########.fr       */
+/*   Updated: 2024/04/27 13:19:42 by masayama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,13 +17,7 @@ void	*ft_calloc(size_t count, size_t size)
 	void	*res;
 
 	if (count == 0 || size == 0)
-	{
-		res = malloc(1);
-		if (res == NULL)
-			return (NULL);
-		ft_memset(res, 0, 1);
-		return (res);
-	}
+		return (NULL);
 	if ((size_t)SIZE_MAX / count < size)
 		return (NULL);
 	res = malloc(count * size);
